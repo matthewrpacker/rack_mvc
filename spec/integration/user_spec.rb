@@ -6,6 +6,7 @@ end
 
 describe 'users#index' do
   before { visit '/' }
+  subject { page }
 
   it 'renders layout' do
     expect(page).to have_content('application#layout')
